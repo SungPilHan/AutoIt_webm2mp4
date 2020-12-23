@@ -65,7 +65,7 @@ For $i = 1 To $FL[0]
    ;;변환 대기
    Local $Replaced_FilePath = StringReplace($FilePath, "\", "/")&"/"
    Local $Title_Name = "Converting file:///"&$Replaced_FilePath&$FileName&" - VLC 미디어 재생기"
-   ConsoleWrite("start : "&$Title_Name&$i&"/"&$FL[0]&@CRLF)
+   ConsoleWrite("start : "&$Title_Name&"  ("&$i&"/"&$FL[0]&")"&@CRLF)
    WinWaitClose($Title_Name)
    ConsoleWrite("done"&@CRLF)
    Sleep($Command_sleep * 2)
